@@ -152,71 +152,7 @@
     </div>
     <!-- Product Section End -->
 
-    <!-- Why Choose us Section Start -->
-    <div class="wy-choose-wrap bg_primary pt-100 pb-75">
-        <div class="container">
-            <div class="row">
-                <div class="col-xxl-4 col-xl-5 col-lg-5">
-                    <div class="wh-content">
-                        <div class="content-title-one mb-40">
-                            <span>Mengapa Memilih Kami</span>
-                            <h2>Provide High Service For Everyone</h2>
-                            <p>Lorem ipsum dolor amet consectetur adipisicing elit sed do demi text voluptatem dolore amet magna aliqua.</p>
-                        </div>
-                        <!-- <img src="assets/img/about/wh-img.webp" alt="Image" class="wh-img" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200"> -->
-                        <img src="assets/img/hero/pajero-sport-removebg-preview.png" alt="Image" class="wh-img" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
-                    </div>
-                </div>
-                <div class="col-xxl-8 col-xl-7 col-lg-7">
-                    <div class="row">
-                        <div class="col-xl-6 col-lg-12 col-md-6" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
-                            <div class="wh-card">
-                                <span class="wh-count">01</span>
-                                <span class="wh-icon">
-                                    <i class="flaticon-car-key"></i>
-                                </span>
-                                <h3>Wide Range Of Brands</h3>
-                                <p>Lorem ipsum dolor amet consectetur adipiscing elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim ad minim veniamquis</p>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-lg-12 col-md-6" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
-                            <div class="wh-card">
-                                <span class="wh-count">02</span>
-                                <span class="wh-icon">
-                                    <i class="flaticon-disc-brake"></i>
-                                </span>
-                                <h3>Finance Made Easy</h3>
-                                <p>Lorem ipsum dolor amet consectetur adipiscing elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim ad minim veniamquis</p>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-lg-12 col-md-6" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
-                            <div class="wh-card">
-                                <span class="wh-count">03</span>
-                                <span class="wh-icon">
-                                    <i class="flaticon-gear"></i>
-                                </span>
-                                <h3>Trusted By Thousands</h3>
-                                <p>Lorem ipsum dolor amet consectetur adipiscing elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim ad minim veniamquis</p>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-lg-12 col-md-6" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
-                            <div class="wh-card">
-                                <span class="wh-count">04</span>
-                                <span class="wh-icon">
-                                    <i class="flaticon-tire"></i>
-                                </span>
-                                <h3>Car Service & Maintenance</h3>
-                                <p>Lorem ipsum dolor amet consectetur adipiscing elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim ad minim veniamquis</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Why Choose us Section End -->
-
-    <div class="product-wrap pt-100 pb-70">
+    <div class="product-wrap bg_primary pt-100 pb-70">
         <div class="container">
 
             <!-- Mobil Penumpang -->

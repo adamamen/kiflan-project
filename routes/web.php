@@ -31,3 +31,4 @@ Route::get('/new-pajero-sport', [PajeroController::class, 'index'])->name('pajer
 Route::get('/new-xpander', [XpanderController::class, 'index'])->name('xpander.index');
 Route::get('/new-xpander-cross', [XpanderCrossController::class, 'index'])->name('xpander_cross.index');
 Route::get('/colt-l300', [ColtL300Controller::class, 'index'])->name('colt_l300.index');
+Route::post('/send-email', [KontakController::class, 'sendEmail'])->name('send.email');

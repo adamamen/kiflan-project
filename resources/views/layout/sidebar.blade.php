@@ -2,7 +2,7 @@
     <div class="sidebar-popup-wrap">
         <button type="button" class="close-popup"> <i class="ri-close-fill"></i> </button>
         <div class="comp-logo">
-            <a href="index.html">
+            <a href="{{ route('home.index') }}">
                 <img src="assets/img/mitsubishi-logo-67EA251D5A.png" alt="Image" style="width: 25%;">
             </a>
         </div>

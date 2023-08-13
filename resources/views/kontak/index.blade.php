@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="zxx">
 
-
-<!-- Mirrored from templates.hibotheme.com/motoz/default/inventory-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Jul 2023 06:09:32 GMT -->
 @include('layout.header')
 
 <body>
+
     <div class="body_overlay"></div>
+
     <!--Preloader starts-->
     <div class="loader js-preloader">
         <svg class="car" width="102" height="40" xmlns="http://www.w3.org/2000/svg">
@@ -55,25 +55,111 @@
     </div>
     <!-- Breadcrumb End -->
 
-    <!-- Inventory Details section Start -->
-    <section class="service-details-wrap ptb-100">
+    <!-- Contact Us section Start -->
+    <section class="contact-us-wrap ptb-100">
         <div class="container">
+            <div class="section-title-one text-center mb-40">
+                <span>Kontak</span>
+                <h2>Kontak</h2>
+            </div>
             <div class="row">
-                @foreach ($contact as $value)
-                <div class="col-lg-8">
-                    <div class="service-desc">
-                        <h2>Lokasi</h2>
-                        <p>{{ $value['lokasi'] }}</p>
-                        <h2>Email</h2>
-                        <p>{{ $value['email'] }}</p>
-                        <h2>No Handphone</h2>
-                        <p>{{ $value['no_handphone'] }}</p>
+                <div class="col-xl-4 col-lg-5 col-md-12">
+                    @foreach ($contact as $value)
+                    <div class="contact-item-wrap">
+                        <div class="contact-item">
+                            <span class="contact-icon">
+                                <ion-icon name="location"></ion-icon>
+                            </span>
+                            <div class="contact-info">
+                                <h3>Lokasi</h3>
+                                <p>
+                                    {{ $value['lokasi'] }}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">
+                                <ion-icon name="mail"></ion-icon>
+                            </span>
+                            <div class="contact-info">
+                                <h3>Email</h3>
+                                <span class="__cf_email__">{{ $value['email'] }}</span></a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">
+                                <ion-icon name="call"></ion-icon>
+                            </span>
+                            <div class="contact-info">
+                                <h3>No Handphone</h3>
+                                <a href="https://wa.me/+6285717471340?text=Saya%20tertarik%20dengan%20mobilnya,%20kira2%20harganya%20berapa%20ya?">{{ $value['no_handphone'] }}</a>
+                            </div>
+                        </div>
+                    </div>
+                    @endforeach
+                </div>
+                <div class="col-xl-8 col-lg-7 col-12">
+                    <div class="contact-form">
+                        <form class="form-wrap" id="contactForm" action="{{ route('send.email') }}" method="POST">
+                            @csrf
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" name="nama" placeholder="Nama*" id="nama" required data-error="* Masukkan nama anda">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="number" name="no_handphone" id="no_handphone" required placeholder="No Handphone*" data-error="* Masukkan no handphone anda">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <select id="mobil" name="mobil" required>
+                                            <option selected disabled value="">-- Pilih Mobil Anda --</option>
+                                            <option value="1">XFC</option>
+                                            <option value="2">New Pajero Sport</option>
+                                            <option value="3">New Xpander</option>
+                                            <option value="4">New Xpander Cross</option>
+                                            <option value="5">Colt L300</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <select id="lokasi" name="lokasi" required>
+                                            <option selected disabled value="">-- Pilih Lokasi Anda --</option>
+                                            <option value="1">DKI Jakarta</option>
+                                            <option value="2">Bogor</option>
+                                            <option value="3">Depok</option>
+                                            <option value="4">Tangerang</option>
+                                            <option value="5">Bekasi</option>
+                                            <option value="6">Karawang</option>
+                                            <option value="7">Dan Lainnya</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group v1">
+                                        <textarea name="pesan" id="pesan" placeholder="Pesan anda.." cols="30" rows="10" required data-error="* Masukkan pesan anda"></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <button type="submit" class="btn-two">Submit</button>
+                                    <!-- <div id="msgSubmit" class="h3 text-center hidden"></div> -->
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
-                @endforeach
             </div>
+        </div>
     </section>
-    <!-- Inventory Details section end -->
+    <!-- Contact Us section End -->
 
     <!-- Footer Section Start -->
     @include('layout.footer')
@@ -94,7 +180,7 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/form-validator.min.js"></script>
-    <script src="assets/js/contact-form-script.js"></script>
+    <!-- <script src="assets/js/contact-form-script.js"></script> -->
     <script src="assets/js/aos.js"></script>
     <script src='../../../unpkg.com/ionicons%405.0.0/dist/ionicons.js'></script>
     <script src="assets/js/owl.carousel.min.js"></script>
@@ -106,6 +192,6 @@
 </body>
 
 
-<!-- Mirrored from templates.hibotheme.com/motoz/default/inventory-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Jul 2023 06:09:33 GMT -->
+<!-- Mirrored from templates.hibotheme.com/motoz/default/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Jul 2023 06:09:44 GMT -->
 
 </html>

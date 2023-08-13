@@ -22,7 +22,7 @@
                             <a href="https://wa.me/+6285717471340?text=Saya%20tertarik%20dengan%20mobilnya,%20kira2%20harganya%20berapa%20ya?">{{ $value['no_handphone'] }}</a>
                         </li>
                         <li>
-                            <div style="color: white;">Website visit count:</div>
+                            <h6>This page was viewed</h6>
                             <div style="color: white;" class="website-counter"></div>
                         </li>
                     </ul>
