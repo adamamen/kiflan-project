@@ -119,11 +119,11 @@
         <div class="container">
             <div class="section-title-one text-center mb-40">
                 <span>Gallery</span>
-                <h2>Exterior</h2>
+                <h2>Interior</h2>
             </div>
             <div class="row">
                 @foreach ($gallery as $value)
-                    @if (substr($value['assets'], -14, 8) != 'Interior')
+                    @if (substr($value['assets'], -14, 8) == 'Interior')
                         <div class="col-md-4">
                             <a class="single-service-img" data-fancybox="gallery" href="{{ $value['assets'] }}">
                                 <img src="{{ $value['assets'] }}" alt="Image">
@@ -136,11 +136,11 @@
         <div class="container">
             <div class="section-title-one text-center mb-40">
                 <span>Gallery</span>
-                <h2>Interior</h2>
+                <h2>Exterior</h2>
             </div>
             <div class="row">
                 @foreach ($gallery as $value)
-                    @if (substr($value['assets'], -14, 8) == 'Interior')
+                    @if (substr($value['assets'], -14, 8) != 'Interior')
                         <div class="col-md-4">
                             <a class="single-service-img" data-fancybox="gallery" href="{{ $value['assets'] }}">
                                 <img src="{{ $value['assets'] }}" alt="Image">
