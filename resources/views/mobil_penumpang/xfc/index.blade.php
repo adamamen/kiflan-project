@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="zxx">
 
-
-<!-- Mirrored from templates.hibotheme.com/motoz/default/listings.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Jul 2023 06:09:33 GMT -->
-
 @include('layout.header')
 
 <body>
@@ -207,8 +204,5 @@
     <script src="assets/js/tweenmax.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
-
-
-<!-- Mirrored from templates.hibotheme.com/motoz/default/listings.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Jul 2023 06:09:34 GMT -->
 
 </html>
